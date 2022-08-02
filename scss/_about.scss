@@ -1,0 +1,64 @@
+
+@charset "utf-8";
+@import "system";
+
+
+
+.about-box {
+
+    h2 , h3 {
+        color: $g-color;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 50px;
+
+     
+        
+    }
+
+    p {
+        font-size: $font*1.25;
+        line-height: 175%;
+    }
+
+    .submit-title {
+        width: 640px;
+        max-width: 640px;
+        @include mob() {
+            width: 100%;
+            padding-left: 2.5rem;
+            padding-right: 2.5rem;
+          
+
+        }
+    }
+}
+
+#subframe {
+    @include mob(){
+        height: 1200px;
+        max-height: 1100px;
+    }
+}
+
+#ask-form {
+    max-width: 640px;
+    width: 100%;
+}
+
+.way-title {
+ font-size: $font*1.4;
+ font-weight: bold;
+}
+
+.btncolor {
+
+    background: $g-color;
+    border: none;
+    &:hover , &.active {
+        background-color: $g-color;
+    }
+
+    
+
+}

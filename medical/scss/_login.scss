@@ -1,0 +1,42 @@
+
+
+
+
+.logininput{ 
+    width: 100%; 
+    background: $m-color;
+    border: none;
+    color: $b-color;
+    &:hover {
+        background: $m-color;
+    }
+}
+#login-box {
+
+    min-height: 200px;
+    padding: 15px;
+ 
+    @include mob(){
+        background-position: center;
+    }
+
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.else-info {
+    text-align: right;
+    margin-top: 5px;
+
+    a {
+        margin-left: 5px;
+        color: $b-color;
+
+        &:hover {
+            color: $m-color;
+        }
+       
+    }
+}

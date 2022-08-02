@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <script src="https://eva813.github.io/Eva_portfolio/scrollBlog/jquery-3.5.1.min.js"></script>
+
+  <link rel="stylesheet" href="https://eva813.github.io/Eva_portfolio/scrollBlog/style.css" />
+  <title>My Blog</title>
+</head>
+
+<body>
+  <h1>My Blog</h1>
+
+  <div class="filter-container">
+    <input type="text" id="filter" class="filter" placeholder="Filter posts..." />
+  </div>
+  <!-- 這裡會製作一個假的資料呈現，幫助理清畫面的呈現 -->
+  <div id="posts-container">
+    <!-- <div class="post">
+      <div class="number">1</div>
+      <div class="post-info">
+        <h2 class="post-title">post one</h2>
+        <p class="post-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim atque velit aliquid, peellendus sint voluptatem
+          cumque, praesentium ut asperiores consequatur dolores maxime recusandae in illum.
+        </p>
+      </div>
+    </div> -->
+  </div>
+
+  <div class="loader">
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+  </div>
+
+ <script>
+
+$(document).ready(function () {
+  doAjax();
+
+
+  //輸入框搜尋//https://makitweb.com/jquery-search-text-in-the-element-with-contains-selector/  (=>Loop all .content )
+  $('#filter').keyup(function () {
+
+    // Search text
+    var text = $('#filter').val().toLowerCase();
+
+    // Hide all content class element
+    $('.post').hide();
+
+    // Search 
+    $('.post').each(function () {
+
+      if ($(this).text().toLowerCase().indexOf("" + text + "") != -1) {
+        $(this).closest('.post').show();
+      }
+    });
+
+
+  });
+
+
+});
+
+
+let limit = 5
+let page = 1
+
+async function doAjax() {
+  let result;
+
+  try {
+    result = await $.ajax({
+      url: `https://jsonplaceholder.typicode.com/posts?_limit=${limit}&_page=${page}`,
+      type: 'get',
+      dataType: 'json',
+      success: function (data) {
+        $.each(data, function (index, value) {
+
+
+          const postEl = $('<div />').addClass('post').html(`<div class="number">${value.id}</div> <div class="post-info"><h2 class="post-title">${value.title}</h2><p class="post-body">${value.body}</p>
+      </div>`)
+          //console.log(postEl)
+          postEl.appendTo('#posts-container');
+          //$('#posts-container').append(postEl)
+
+        });
+
+
+        //console.log(data);
+      }
+    });
+
+    return result;
+  } catch (error) {
+    console.error(error);
+  }
+
+}
+
+
+
+
+$(window).scroll(function () {
+  var scrollTop = $(this).scrollTop();
+  var scrollHeight = $('body').prop("scrollHeight");
+  //一樣 var scrollHeight2 = document.documentElement.scrollHeight;
+  var clientHeight = document.documentElement.clientHeight;
+  //https://stackoverflow.com/questions/10423759/plain-javascript-to-jquery-clientheight
+
+  // console.log('scrollTop:', scrollTop);
+  // console.log('scrollHeight:', scrollHeight);
+  // console.log('clientHeight:', clientHeight);
+
+
+  if (scrollTop + clientHeight >= scrollHeight - 5) {
+   console.log('show up 123')
+    showLoading();
+   return false
+  }
+})
+
+
+//顯示載入圖示，並取得更多串接資料
+function showLoading() {
+  $('.loader').addClass('show');
+
+
+  setTimeout(function () {
+
+    $('.loader').removeClass('show');
+
+    setTimeout(function () {
+      page++;
+      doAjax();
+    }, 300);
+
+  }, 1000);  //1秒之後消失
+  //在1秒消失後，接著在300毫秒後，馬上換頁執行載入新資料
+}
+
+ </script>
+</body>
+
+</html>

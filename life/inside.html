@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta content='width=device-width, initial-scale = 1.0,maximum-scale=1.0, user-scalable=no' name="viewport">
+	<!-- Bootstrap CSS -->
+	<meta content="index,follow" name="robots">
+	<title>
+		<%= meta['title'] %>│新一代媒體集團
+	</title>
+	<meta content="<%= meta['keywords'] %>" name="keywords">
+	<meta content="<%= meta['description'] %>" name="description">
+	<meta content="website" property="og:type">
+	<meta content="zh_TW" property="og:locale">
+	<meta content="<%= meta['og:url'] %>" property="og:url">
+	<meta content="<%= meta['og:image'] %>" property="og:image">
+	<meta content="新一代媒體集團" property="og:site_name">
+	<meta content="<%= meta['og:title'] %>" property="og:title">
+	<meta content="<%= meta['og:keywords'] %>" property="og:keywords">
+	<meta content="<%= meta['og:description'] %>" property="og:description">
+	<meta property="fb:app_id" content="840565986116397">
+	</meta>
+	<meta content="新一代媒體" name="author">
+	<meta content="新一代媒體" name="copyright">
+	<link href="https://www.news-age.tw/" rel="canonical">
+	<link rel="shortcut icon" href="images/favicon.ico" />
+	<link rel="bookmark" href="images/favicon.ico" />
+	<!-- CSS only -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/owl.carousel.min.css" rel="stylesheet">
+	<link href="css/owl.theme.default.min.css" rel="stylesheet">
+	<link href="css/style.min.css" rel="stylesheet">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-217406781-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'UA-217406781-1');
+	</script>
+
+	<!--GA4-->
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-MVLQ2HVB85"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-MVLQ2HVB85');
+	</script>
+
+</head>
+
+<body>
+
+	<header id="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-7 align-self-center">
+					<div id="logo">
+						<a href="../index.html"><img alt="新一代媒體" class="img-fluid" height="122" src="images/logo.svg"
+								width="138"></a>
+					</div>
+				</div>
+				<div class="menu-box col-xxl-7 col-xl-7 col-lg-9 col-md align-self-center">
+					<nav id="nav">
+
+
+
+						<ul class="d-flex">
+							<li class="col text-center">
+								<a href="../View/" title="新一代觀點">新一代觀點</a>
+							</li>
+							<li class="col text-center">
+								<a href="../Topic/" title="話題">話題</a>
+							</li>
+							<li class="col text-center">
+								<a href="../life/" title="台中腔" class="active-menu">台中腔</a>
+							</li>
+							<li class="col text-center">
+								<a href="../Educate/" title="教育">教育</a>
+							</li>
+							<li class="col text-center">
+								<a href="../medical/" title="健康" class="d-none d-md-block">健康<i
+										class="bi bi-caret-down-fill ms-2"></i></a>
+								<a href="javascript:;" title="健康" class="d-md-none">健康<i
+										class="bi bi-caret-down-fill ms-2"></i></a>
+								<ul>
+									<li class="d-md-none"><a href="../medical/">健康頻道首頁</a></li>
+									<li><a href="../medical/point.html">光點系列</a></li>
+								</ul>
+							</li>
+
+
+						</ul>
+
+						<div class="row justify-content-center mt-3 d-md-none">
+							<div class="col-auto">
+								<a href="https://www.facebook.com/newsagelife" target="_blank">
+									<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+										class="bi bi-facebook" viewBox="0 0 16 16">
+										<path
+											d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+									</svg>
+								</a>
+							</div>
+							<div class="col-auto">
+								<a href="https://www.instagram.com/newsageforu/" target="_blank">
+									<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+										class="bi bi-instagram" viewBox="0 0 16 16">
+										<path
+											d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+									</svg>
+								</a>
+							</div>
+							<div class="col-auto">
+								<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+									class="bi bi-line" viewBox="0 0 16 16">
+									<path
+										d="M8 0c4.411 0 8 2.912 8 6.492 0 1.433-.555 2.723-1.715 3.994-1.678 1.932-5.431 4.285-6.285 4.645-.83.35-.734-.197-.696-.413l.003-.018.114-.685c.027-.204.055-.521-.026-.723-.09-.223-.444-.339-.704-.395C2.846 12.39 0 9.701 0 6.492 0 2.912 3.59 0 8 0ZM5.022 7.686H3.497V4.918a.156.156 0 0 0-.155-.156H2.78a.156.156 0 0 0-.156.156v3.486c0 .041.017.08.044.107v.001l.002.002.002.002a.154.154 0 0 0 .108.043h2.242c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157Zm.791-2.924a.156.156 0 0 0-.156.156v3.486c0 .086.07.155.156.155h.562c.086 0 .155-.07.155-.155V4.918a.156.156 0 0 0-.155-.156h-.562Zm3.863 0a.156.156 0 0 0-.156.156v2.07L7.923 4.832a.17.17 0 0 0-.013-.015v-.001a.139.139 0 0 0-.01-.01l-.003-.003a.092.092 0 0 0-.011-.009h-.001L7.88 4.79l-.003-.002a.029.029 0 0 0-.005-.003l-.008-.005h-.002l-.003-.002-.01-.004-.004-.002a.093.093 0 0 0-.01-.003h-.002l-.003-.001-.009-.002h-.006l-.003-.001h-.004l-.002-.001h-.574a.156.156 0 0 0-.156.155v3.486c0 .086.07.155.156.155h.56c.087 0 .157-.07.157-.155v-2.07l1.6 2.16a.154.154 0 0 0 .039.038l.001.001.01.006.004.002a.066.066 0 0 0 .008.004l.007.003.005.002a.168.168 0 0 0 .01.003h.003a.155.155 0 0 0 .04.006h.56c.087 0 .157-.07.157-.155V4.918a.156.156 0 0 0-.156-.156h-.561Zm3.815.717v-.56a.156.156 0 0 0-.155-.157h-2.242a.155.155 0 0 0-.108.044h-.001l-.001.002-.002.003a.155.155 0 0 0-.044.107v3.486c0 .041.017.08.044.107l.002.003.002.002a.155.155 0 0 0 .108.043h2.242c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157H11.81v-.589h1.525c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157H11.81v-.589h1.525c.086 0 .155-.07.155-.156Z" />
+								</svg>
+							</div>
+							<div class="col-auto">
+								<a href="#">
+
+									<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+										class="bi bi-youtube" viewBox="0 0 16 16">
+										<path
+											d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+									</svg>
+
+								</a>
+							</div>
+
+						</div>
+
+					</nav>
+				</div>
+				<div class="col-xxl-3 col-xl-3 col-lg-auto col-md d-none d-xl-block align-self-center ">
+
+
+					<ul class="contact d-flex justify-content-center">
+						<li class="col-auto">
+							<a href="https://www.facebook.com/newsagelife" target="_blank">
+
+								<i class="bi bi-facebook"></i>
+
+
+							</a>
+						</li>
+						<li class="col-auto">
+							<a href="https://www.instagram.com/newsageforu/" target="_blank">
+
+								<i class="bi bi-instagram"></i>
+
+							</a>
+						</li>
+						<li class="col-auto">
+							<a href="#">
+
+								<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+									class="bi bi-line" viewBox="0 0 16 16">
+									<path
+										d="M8 0c4.411 0 8 2.912 8 6.492 0 1.433-.555 2.723-1.715 3.994-1.678 1.932-5.431 4.285-6.285 4.645-.83.35-.734-.197-.696-.413l.003-.018.114-.685c.027-.204.055-.521-.026-.723-.09-.223-.444-.339-.704-.395C2.846 12.39 0 9.701 0 6.492 0 2.912 3.59 0 8 0ZM5.022 7.686H3.497V4.918a.156.156 0 0 0-.155-.156H2.78a.156.156 0 0 0-.156.156v3.486c0 .041.017.08.044.107v.001l.002.002.002.002a.154.154 0 0 0 .108.043h2.242c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157Zm.791-2.924a.156.156 0 0 0-.156.156v3.486c0 .086.07.155.156.155h.562c.086 0 .155-.07.155-.155V4.918a.156.156 0 0 0-.155-.156h-.562Zm3.863 0a.156.156 0 0 0-.156.156v2.07L7.923 4.832a.17.17 0 0 0-.013-.015v-.001a.139.139 0 0 0-.01-.01l-.003-.003a.092.092 0 0 0-.011-.009h-.001L7.88 4.79l-.003-.002a.029.029 0 0 0-.005-.003l-.008-.005h-.002l-.003-.002-.01-.004-.004-.002a.093.093 0 0 0-.01-.003h-.002l-.003-.001-.009-.002h-.006l-.003-.001h-.004l-.002-.001h-.574a.156.156 0 0 0-.156.155v3.486c0 .086.07.155.156.155h.56c.087 0 .157-.07.157-.155v-2.07l1.6 2.16a.154.154 0 0 0 .039.038l.001.001.01.006.004.002a.066.066 0 0 0 .008.004l.007.003.005.002a.168.168 0 0 0 .01.003h.003a.155.155 0 0 0 .04.006h.56c.087 0 .157-.07.157-.155V4.918a.156.156 0 0 0-.156-.156h-.561Zm3.815.717v-.56a.156.156 0 0 0-.155-.157h-2.242a.155.155 0 0 0-.108.044h-.001l-.001.002-.002.003a.155.155 0 0 0-.044.107v3.486c0 .041.017.08.044.107l.002.003.002.002a.155.155 0 0 0 .108.043h2.242c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157H11.81v-.589h1.525c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157H11.81v-.589h1.525c.086 0 .155-.07.155-.156Z" />
+								</svg>
+
+							</a>
+						</li>
+						<li class="col-auto">
+							<a href="#">
+
+								<i class="bi bi-youtube"></i>
+
+							</a>
+						</li>
+
+
+					</ul>
+
+				</div>
+
+
+
+
+
+				<div class="col d-md-none align-self-center">
+					<!-- <a class="loginstyle" href="login.html" title="會員登入">
+						<i class="bi bi-person-plus-fill"></i>
+					</a> -->
+					<a href="#" id="menuicon"><i class="bi bi-list"></i></a>
+				</div>
+			</div>
+		</div>
+
+
+
+	</header>
+
+	<!-- 內頁-->
+	<section class="container mt-5">
+		<nav aria-label="breadcrumb" class="breadcrumbstyle mb-3">
+
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="index.html">新一代媒體</a></li>
+				<li class="breadcrumb-item" aria-current="page"><a href="list.html">列表頁</a></li>
+				<li class="breadcrumb-item active" aria-current="page">抓標題</li>
+			</ol>
+
+
+		</nav>
+
+		<div class="row">
+
+
+
+			<div class="col-lg-9 ">
+
+
+				<article class="inside-main">
+
+
+					<div class="article-title"></div>
+
+					<div class="edit"></div>
+
+				</article>
+
+
+				<div class="share-box">
+
+					<div class="row justify-content-center g-2 mt-3 mb-3 share-into"></div>
+
+				</div>
+
+
+
+
+			</div>
+
+
+			<div class="col-lg-3">
+
+				<div class="hot-news-box">
+
+					<div class="text-center">
+						<h2>熱門頭條</h2>
+					</div>
+
+					<ul>
+						<li>
+							<a href="#" class="d-flex">
+								<div class="col-2 num align-self-center">1</div>
+								<div class="col-10 align-self-center">企業夥伴傳遞幸福溫暖 大
+									台中企業志工日今登場</div>
+
+
+							</a>
+						</li>
+
+						<li>
+							<a href="#" class="d-flex">
+								<div class="col-2 num align-self-center">2</div>
+								<div class="col-10 align-self-center">企業夥伴傳遞幸福溫暖 大
+									台中企業志工日今登場</div>
+
+
+							</a>
+						</li>
+						<li>
+							<a href="#" class="d-flex">
+								<div class="col-2 num align-self-center">3</div>
+								<div class="col-10 align-self-center">企業夥伴傳遞幸福溫暖 大
+									台中企業志工日今登場</div>
+
+
+							</a>
+						</li>
+						<li>
+							<a href="#" class="d-flex">
+								<div class="col-2 num align-self-center">4</div>
+								<div class="col-10 align-self-center">企業夥伴傳遞幸福溫暖 大
+									台中企業志工日今登場</div>
+
+
+							</a>
+						</li>
+						<li>
+							<a href="#" class="d-flex">
+								<div class="col-2 num align-self-center">5</div>
+								<div class="col-10 align-self-center">企業夥伴傳遞幸福溫暖 大
+									台中企業志工日今登場</div>
+
+
+							</a>
+						</li>
+						<li>
+							<a href="#" class="d-flex">
+								<div class="col-2 num align-self-center">6</div>
+								<div class="col-10 align-self-center">企業夥伴傳遞幸福溫暖 大
+									台中企業志工日今登場</div>
+
+
+							</a>
+						</li>
+						<li>
+							<a href="#" class="d-flex">
+								<div class="col-2 num align-self-center">7</div>
+								<div class="col-10 align-self-center">企業夥伴傳遞幸福溫暖 大
+									台中企業志工日今登場</div>
+
+
+							</a>
+						</li>
+						<li>
+							<a href="#" class="d-flex">
+								<div class="col-2 num align-self-center">8</div>
+								<div class="col-10 align-self-center">企業夥伴傳遞幸福溫暖 大
+									台中企業志工日今登場</div>
+
+
+							</a>
+						</li>
+					</ul>
+
+
+				</div>
+
+
+
+				<div class="follow-us-box">
+
+					<h6>FOLLOW US</h6>
+
+					<div class="row sitemap-elselink g-2 justify-content-center">
+						<div class="col-auto"> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30"
+									height="30" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+									<path
+										d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z">
+									</path>
+								</svg></a></div>
+
+
+						<div class="col-auto"> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30"
+									height="30" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+									<path
+										d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
+									</path>
+								</svg></a></div>
+
+
+						<div class="col-auto">
+							<a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+									fill="currentColor" class="bi bi-line" viewBox="0 0 16 16">
+									<path
+										d="M8 0c4.411 0 8 2.912 8 6.492 0 1.433-.555 2.723-1.715 3.994-1.678 1.932-5.431 4.285-6.285 4.645-.83.35-.734-.197-.696-.413l.003-.018.114-.685c.027-.204.055-.521-.026-.723-.09-.223-.444-.339-.704-.395C2.846 12.39 0 9.701 0 6.492 0 2.912 3.59 0 8 0ZM5.022 7.686H3.497V4.918a.156.156 0 0 0-.155-.156H2.78a.156.156 0 0 0-.156.156v3.486c0 .041.017.08.044.107v.001l.002.002.002.002a.154.154 0 0 0 .108.043h2.242c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157Zm.791-2.924a.156.156 0 0 0-.156.156v3.486c0 .086.07.155.156.155h.562c.086 0 .155-.07.155-.155V4.918a.156.156 0 0 0-.155-.156h-.562Zm3.863 0a.156.156 0 0 0-.156.156v2.07L7.923 4.832a.17.17 0 0 0-.013-.015v-.001a.139.139 0 0 0-.01-.01l-.003-.003a.092.092 0 0 0-.011-.009h-.001L7.88 4.79l-.003-.002a.029.029 0 0 0-.005-.003l-.008-.005h-.002l-.003-.002-.01-.004-.004-.002a.093.093 0 0 0-.01-.003h-.002l-.003-.001-.009-.002h-.006l-.003-.001h-.004l-.002-.001h-.574a.156.156 0 0 0-.156.155v3.486c0 .086.07.155.156.155h.56c.087 0 .157-.07.157-.155v-2.07l1.6 2.16a.154.154 0 0 0 .039.038l.001.001.01.006.004.002a.066.066 0 0 0 .008.004l.007.003.005.002a.168.168 0 0 0 .01.003h.003a.155.155 0 0 0 .04.006h.56c.087 0 .157-.07.157-.155V4.918a.156.156 0 0 0-.156-.156h-.561Zm3.815.717v-.56a.156.156 0 0 0-.155-.157h-2.242a.155.155 0 0 0-.108.044h-.001l-.001.002-.002.003a.155.155 0 0 0-.044.107v3.486c0 .041.017.08.044.107l.002.003.002.002a.155.155 0 0 0 .108.043h2.242c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157H11.81v-.589h1.525c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157H11.81v-.589h1.525c.086 0 .155-.07.155-.156Z">
+									</path>
+								</svg></a>
+						</div>
+
+
+						<div class="col-auto"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+									fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+									<path
+										d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z">
+									</path>
+								</svg></a></div>
+
+					</div>
+				</div>
+
+
+
+
+
+
+
+				<div class="ad-box2 owl-carousel owl-theme mt-3">
+
+					<div class="item">
+						<a href="#"><img class="img-fluid owl-lazy" data-src="images/newad.jpg" width="600"
+								height="800"></a>
+					</div>
+					<div class="item">
+						<a href="#"><img class="img-fluid owl-lazy" data-src="images/newad.jpg" width="600"
+								height="800"></a>
+					</div>
+				</div>
+
+
+
+
+
+
+
+
+
+			</div>
+
+
+		</div>
+
+
+
+
+
+
+
+		<div class="else-news">
+
+			<div class="text-center">
+				<h3>延伸閱讀</h3>
+			</div>
+
+			<div class="row justify-content-center else-news-list">
+
+
+
+
+
+			</div>
+
+
+		</div>
+
+
+
+		<!--活動消息-->
+
+		<!-- <div class="act-news-box  mt-5">
+
+			<div class="text-center">
+				<h4>活動消息</h4>
+			</div>
+
+
+			<div class="act-news owl-carousel owl-theme">
+				<div class="item">
+					<a href="activity.html"><img class="img-fluid owl-lazy" data-src="images/activitie.png" width="1110"
+							height="404"></a>
+				</div>
+				<div class="item">
+					<a href="#"><img class="img-fluid owl-lazy" data-src="images/activitie.png" width="1110"
+							height="404"></a>
+				</div>
+				<div class="item">
+					<a href="#"><img class="img-fluid owl-lazy" data-src="images/activitie.png" width="1110"
+							height="404"></a>
+				</div>
+			</div>
+
+
+		</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</section>
+
+	<section id="sitemap">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+
+					<div class="row g-0">
+
+						<div class="col-md-6">
+
+							<a href="../index.html" title="新一代媒體集團">
+								<h1> <img alt="新一代媒體" class="mb-3" height="122" src="images/logo.svg" width="138">
+							</a></h1>
+
+
+						</div>
+						<div class="col-md-6 align-self-center">
+
+							<div class="row sitemap-elselink g-2">
+								<div class="col-auto"> <a href="https://www.facebook.com/newsagelife" target="_blank">
+
+
+										<i class="bi bi-facebook"></i>
+
+									</a>
+
+
+								</div>
+
+
+								<div class="col-auto">
+									<a href="https://www.instagram.com/newsageforu/" target="_blank">
+
+
+
+										<i class="bi bi-instagram"></i>
+
+									</a>
+								</div>
+
+
+								<div class="col-auto">
+
+									<a href="#">
+
+										<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+											fill="currentColor" class="bi bi-line" viewBox="0 0 16 16">
+											<path
+												d="M8 0c4.411 0 8 2.912 8 6.492 0 1.433-.555 2.723-1.715 3.994-1.678 1.932-5.431 4.285-6.285 4.645-.83.35-.734-.197-.696-.413l.003-.018.114-.685c.027-.204.055-.521-.026-.723-.09-.223-.444-.339-.704-.395C2.846 12.39 0 9.701 0 6.492 0 2.912 3.59 0 8 0ZM5.022 7.686H3.497V4.918a.156.156 0 0 0-.155-.156H2.78a.156.156 0 0 0-.156.156v3.486c0 .041.017.08.044.107v.001l.002.002.002.002a.154.154 0 0 0 .108.043h2.242c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157Zm.791-2.924a.156.156 0 0 0-.156.156v3.486c0 .086.07.155.156.155h.562c.086 0 .155-.07.155-.155V4.918a.156.156 0 0 0-.155-.156h-.562Zm3.863 0a.156.156 0 0 0-.156.156v2.07L7.923 4.832a.17.17 0 0 0-.013-.015v-.001a.139.139 0 0 0-.01-.01l-.003-.003a.092.092 0 0 0-.011-.009h-.001L7.88 4.79l-.003-.002a.029.029 0 0 0-.005-.003l-.008-.005h-.002l-.003-.002-.01-.004-.004-.002a.093.093 0 0 0-.01-.003h-.002l-.003-.001-.009-.002h-.006l-.003-.001h-.004l-.002-.001h-.574a.156.156 0 0 0-.156.155v3.486c0 .086.07.155.156.155h.56c.087 0 .157-.07.157-.155v-2.07l1.6 2.16a.154.154 0 0 0 .039.038l.001.001.01.006.004.002a.066.066 0 0 0 .008.004l.007.003.005.002a.168.168 0 0 0 .01.003h.003a.155.155 0 0 0 .04.006h.56c.087 0 .157-.07.157-.155V4.918a.156.156 0 0 0-.156-.156h-.561Zm3.815.717v-.56a.156.156 0 0 0-.155-.157h-2.242a.155.155 0 0 0-.108.044h-.001l-.001.002-.002.003a.155.155 0 0 0-.044.107v3.486c0 .041.017.08.044.107l.002.003.002.002a.155.155 0 0 0 .108.043h2.242c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157H11.81v-.589h1.525c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157H11.81v-.589h1.525c.086 0 .155-.07.155-.156Z" />
+										</svg>
+
+									</a>
+								</div>
+
+
+								<div class="col-auto"><a href="#">
+
+										<i class="bi bi-youtube"></i>
+
+
+
+									</a></div>
+
+							</div>
+
+
+
+
+
+
+
+
+							</ul>
+
+						</div>
+
+
+
+
+					</div>
+
+				</div>
+				<div class="col-md-6">
+					<div class="row hotlink">
+						<div class="col-md-4">
+							<ul>
+								<li>
+									<a href="../list.html">新一代觀點</a>
+								</li>
+
+						</div>
+						<div class="col-md-4">
+							<ul>
+								<li>
+									<a href="../Topic/">話題</a>
+								</li>
+
+							</ul>
+						</div>
+						<div class="col-md-4">
+							<ul>
+								<li>
+									<a href="../life/">台中腔</a>
+								</li>
+
+							</ul>
+						</div>
+						<div class="col-md-4">
+							<ul>
+								<li>
+									<a href="../Educate/">教育</a>
+								</li>
+
+							</ul>
+						</div>
+						<div class="col-md-4">
+							<ul>
+								<li>
+									<a href="../medical/">醫療</a>
+								</li>
+
+							</ul>
+						</div>
+
+						<div class="col-md-4">
+							<ul>
+								<li>
+									<a href="../sport/">運動</a>
+								</li>
+
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+
+
+
+			<div class="row">
+				<ul class="row justify-content-center morelink">
+					<li class="col-auto"><a href="../about.html">關於新一代</a></li>
+					<li class="col-auto"><a href="../community.html">新一代社群</a></li>
+					<li class="col-auto"><a href="../submit.html">想要投稿</a></li>
+					<li class="col-auto"><a href="../ask.html">廣告刊登</a></li>
+					<li class="col-auto"><a href="../useway.html">使用條款</a></li>
+				</ul>
+			</div>
+
+
+
+
+		</div>
+
+
+
+
+
+	</section>
+
+	<a href="javascript:;" id="gotop">
+		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up-fill"
+			viewBox="0 0 16 16">
+		<path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" /></i><span>TOP</span>
+	</a>
+	
+	<footer>
+		<p><a href="mailto:NEWS-AGE@gmail.com">NEWS-AGE@gmail.com</a></p>
+		<p><a href="tel:+886-4-27086000">電話：(04)27086000</a></p>
+		<p>地址：台中市西屯區台灣大道三段376巷1號</p>
+		<p>No. 1, Ln. 376, Sec. 3, Taiwan Blvd. Xitun Dist., Taichung City 407 , Taiwan (R.O.C.)</p>
+		<div class="copyright">新一代時報Copyright © All rights reserved.版權所有 | CoverNews by AF themes.</div>
+	</footer>
+	
+	<!-- JavaScript Bundle with Popper -->
+	<script src="../View/js/instagram.js"></script>
+	<script src="../js/jquery-3.6.0.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/axios.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/inside.js"></script>
+
+</body>
+
+</html>

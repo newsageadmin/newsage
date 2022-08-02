@@ -1,0 +1,68 @@
+
+
+$font:1rem;
+$b-color:#333;
+$m-color:#f08500;
+$g-color:green;
+
+@mixin ulstyle(){
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    
+}
+
+
+@mixin xxl() {
+    
+    @media (min-width:1441px) {
+        @content;
+    }
+}
+
+@mixin xl() {
+    
+    @media (min-width:1201px) and (max-width:1440px) {
+        @content;
+    }
+}
+
+@mixin xl-pad(){
+
+    @media (min-width:992px) and (max-width:1200px) {
+         @content;
+    }
+    
+}
+
+
+@mixin pad(){
+
+    @media (min-width:768px) and (max-width:991px) {
+         @content;
+    }
+    
+}
+
+
+
+@mixin mob() {
+    
+    @media (max-width:769px) {
+        
+        @content;
+    }
+    
+    
+}
+
+
+@mixin sm-mob() {
+    
+    @media (max-width:351px) {
+        
+        @content;
+    }
+    
+    
+}

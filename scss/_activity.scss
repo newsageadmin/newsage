@@ -1,0 +1,140 @@
+
+@charset "utf-8";
+@import "system";
+
+
+
+.act-date {
+
+    font-size: $font*1.6;
+  
+    span {
+        color: lightcoral;
+        font-weight: bold;
+
+    }
+}
+
+
+.act-way {
+
+    font-size: $font*1.6;
+  
+    span {
+        color: lightcoral;
+        font-weight: bold;
+
+    }
+
+
+}
+
+
+.act-namelist {
+
+    font-size: $font*1.6;
+  
+    span {
+        color: lightcoral;
+        font-weight: bold;
+
+    }
+
+
+}
+
+.edit {
+    margin: 1.5rem 0;
+    font-size: $font*1.4;
+    border-bottom: #ccc solid 1px;
+    padding-bottom: 1.5rem;
+    line-height: 175%;
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    @include mob(){
+        font-size: $font*1.2;
+    }
+
+ 
+}
+
+
+.h1-title  , 
+.h2-title ,
+.problem-title {
+   
+
+    margin-bottom: 0;
+    font-size: 1.8rem;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 1px;
+    font-weight: 600;
+    line-height: 1.2;
+        
+
+        &:before {
+    content: "";
+    background: #4abdac;
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 2;
+    bottom: -10px;
+        }
+   
+}
+
+
+.pr-box {
+
+    background: #eee;
+    border: #333 solid 1px;
+    margin: 50px 0;
+    padding: 15px;
+    font-size: $font*1.6;
+    text-align: center;
+    @include mob(){
+        font-size: $font*1.2;
+    }
+
+    .form-check {
+       
+        max-width: 10%;
+        margin: 0 auto;
+        @include xl-pad(){
+            max-width: 15%;
+        }
+        @include pad(){
+            max-width: 20%;
+        }
+        @include mob(){
+            max-width: 100%;
+            text-align: left;
+         
+        }
+    }
+
+    .form-check-input:checked {
+        background-color: $m-color;
+        border: $m-color;
+    }
+
+    .prbtn {
+        background: #37a3c3;
+        border: none;
+        width: 15%;
+        @include mob(){
+            width: 100%;
+        }
+    }
+}
+
+.breadcrumbstyle {
+    a {
+        color: #333;
+    }
+}

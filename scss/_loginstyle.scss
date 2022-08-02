@@ -1,0 +1,56 @@
+
+@charset "utf-8";
+@import "system";
+
+
+
+
+
+.logininput{ width: 100%; background: $m-color; border: none;}
+
+#login-box {
+
+    min-height: 500px;
+    background: url(../images/login_bg.jpg);
+    padding: 10vw;
+    background-size: cover;
+
+    .container {
+        max-width: 650px;
+    }
+  
+
+    @include mob(){
+        background-position: center;
+    }
+
+  
+
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.else-info {
+    text-align: right;
+    margin-top: 5px;
+
+    a {
+        margin-left: 5px;
+        color: $b-color;
+
+        &:hover {
+            color: $m-color;
+        }
+       
+    }
+}
+
+
+
+#register-btn {
+    width: 100%;
+}
+
+
