@@ -67,7 +67,8 @@ function warmapi() {
 
     //?chLocation=medicalB_1
 
-    axios.get(`${apitestlink}/getData/position/醫療/medicalC`)
+  //  axios.get(`${apitestlink}/getData/position/醫療/medicalC`)
+    axios.get('./JSON/medicalC.json')
         .then((res) => {
 
             warmA = res.data;
