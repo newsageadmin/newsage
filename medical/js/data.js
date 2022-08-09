@@ -61,11 +61,10 @@ init();
 function sliderapi() {
 
     // http://api01.news-age.tw/api/Medical/Front
-    // https://apilan.news-age.tw/getData/front/醫療?chStatus=1
-
-    axios.get(`${apitestlink}/getData/front/醫療?chStatus=1`)
+    // https://api.news-age.tw/getData/front/醫療?chStatus=1
+    // axios.get(`${apitestlink}/getData/front/醫療?chStatus=1`)
+     axios.get('./JSON/medical.json')
         .then((res) => {
-
             sliderData = res.data;
             sliderData.length = 7;
 
@@ -83,7 +82,8 @@ function sliderapi() {
 
 function reportapi() {
 
-    axios.get(`${apitestlink}/getData/position/醫療/medicalA`)
+    // axios.get(`${apitestlink}/getData/position/醫療/medicalA`)
+    axios.get('./JSON/medicalA.json')
         .then((res) => {
             reportData = res.data;
             getreportlist();
@@ -99,7 +99,8 @@ function reportapi() {
 //Care主題精選api
 function returnAreapi() {
     //https://apilan.news-age.tw/medical/medicalB/?chLocation=medicalB_1
-    axios.get(`${apitestlink}/getData/position/醫療/medicalB_1`)
+    // axios.get(`${apitestlink}/getData/position/醫療/medicalB_1`)
+    axios.get('./JSON/medicalB_1.json')
         .then((res) => {
             returnAData = res.data;
          
@@ -126,7 +127,8 @@ function returnAreapi() {
 
 function returnBreapi() {
     //https://apilan.news-age.tw/medical/medicalB/?chLocation=medicalB_1
-    axios.get(`${apitestlink}/getData/position/醫療/medicalB_2`)
+    // axios.get(`${apitestlink}/getData/position/醫療/medicalB_2`)
+    axios.get('./JSON/medicalB_2.json')
         .then((res) => {
             returnBData = res.data;
 
@@ -155,7 +157,8 @@ function returnBreapi() {
 
 function returnCreapi() {
     //https://apilan.news-age.tw/medical/medicalB/?chLocation=medicalB_1
-    axios.get(`${apitestlink}/getData/position/醫療/medicalB_3`)
+   // axios.get(`${apitestlink}/getData/position/醫療/medicalB_3`)
+    axios.get('./JSON/medicalB_3.json')
         .then((res) => {
             returnCData = res.data;
            
@@ -186,7 +189,8 @@ function returnCreapi() {
 
 function returnDreapi() {
     //https://apilan.news-age.tw/medical/medicalB/?chLocation=medicalB_1
-    axios.get(`${apitestlink}/getData/position/醫療/medicalB_4`)
+   // axios.get(`${apitestlink}/getData/position/醫療/medicalB_4`)
+    axios.get('./JSON/medicalB_4.json')
         .then((res) => {
             returnDData = res.data;
 
@@ -220,7 +224,8 @@ function returnDreapi() {
 //長
 function longadapi() {
 
-    axios.get(`${apitestlink}/getData/ad/醫療`)
+    // axios.get(`${apitestlink}/getData/ad/醫療`)
+    axios.get('./JSON/ad.json')
         .then((res) => {
 
             longad = res.data;
@@ -240,7 +245,8 @@ function warmapi() {
 
     //?chLocation=medicalB_1
 
-    axios.get(`${apitestlink}/getData/position/醫療/medicalC`)
+  //  axios.get(`${apitestlink}/getData/position/醫療/medicalC`)
+    axios.get('./JSON/medicalC.json')
         .then((res) => {
 
             warmA = res.data;

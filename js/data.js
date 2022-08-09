@@ -46,8 +46,8 @@ function returntime(time) {
 
 function Lgadapi() {
 
-   axios.get(`${apitestlocal}/getData/front/?homeStatus=1`)
-  // axios.get('../JSON/ad.json')
+  // axios.get(`${apitestlocal}/getData/front/?homeStatus=1`)
+  axios.get('../JSON/banner.json')
     .then((res) => {
       Lgbgary = res.data;
       Lgbgary.length = 5;
@@ -132,8 +132,9 @@ function getLgad() {
 //廣告API
 
 function adapi() {
-  //https://apilan.news-age.tw/getData/ad/首頁
-  axios.get(`${apitestlocal}/getData/ad/首頁`)
+  //https://api.news-age.tw/getData/ad/首頁
+  //axios.get(`${apitestlocal}/getData/ad/首頁`)
+  axios.get('../JSON/ad.json')
     .then((res) => {
 
       addata = res.data;
@@ -152,7 +153,8 @@ function adapi() {
 
 function allListapi() {
 
-  axios.get(`${apitestlocal}/articleData`)
+  // axios.get(`${apitestlocal}/articleData`)
+  axios.get('../JSON/articleData.json')
     .then((res) => {
 
       allData = res.data.result;
@@ -497,11 +499,9 @@ function rightAddata() {
     items: 1,
     mouseDrag: false,
     autoplayTimeout: 5000,
-
-
   });
 
-}
+};
 
 
 function getadData() {
@@ -511,17 +511,13 @@ function getadData() {
   actData.length = 0;
 
   if (actData.length == 0) {
-
-
     $('#activity-box').css('display', 'none')
-
   } else {
 
     actData.forEach((item) => {
       str += `	<div class="item">
   
-    <img alt="${item.act_title}" class="img-fluid owl-lazy" data-src="${item.act_imgurl}" width="750"
-      height="400">
+    <img alt="${item.act_title}" class="img-fluid owl-lazy" data-src="${item.act_imgurl}" width="750" height="400">
   
     <div class="showdown-box">
       <a href="${item.act_link}">
@@ -588,7 +584,7 @@ function localStorageFn() {
 
   saveFavorite.forEach((item) => {
     //取id
-    item.addEventListener( 'click', (e) => {
+    item.addEventListener('click', (e) => {
       // console.log(e.target.dataset.id);
       const id = e.target.dataset.id;
       const title = e.target.dataset.title;
@@ -626,7 +622,7 @@ function localStorageFn() {
 
     //比對陣列的id是否等於點擊收藏id
     favorite.forEach((fid) => {
-    
+
 
       if (fid.id == item.dataset.id) {
         item.children[0].classList.remove('bi-bookmark');
@@ -681,43 +677,43 @@ function updataArticle() {
 
   //移除收藏文章
 
-const saveArticleList = document.querySelectorAll('.saveArticle i');
-// let favorite = JSON.parse(localStorage.getItem('favorite')) || [];
+  const saveArticleList = document.querySelectorAll('.saveArticle i');
+  // let favorite = JSON.parse(localStorage.getItem('favorite')) || [];
 
-saveArticleList.forEach((item) => {
+  saveArticleList.forEach((item) => {
 
-  item.addEventListener('click', (e) => {
-    console.log(e.target);
-    const id = e.target.dataset.id;
-    const saveIndex = localAry.findIndex((item) => item.id === id);
+    item.addEventListener('click', (e) => {
+      console.log(e.target);
+      const id = e.target.dataset.id;
+      const saveIndex = localAry.findIndex((item) => item.id === id);
 
-    if (saveIndex !== -1) {
-
-     
-    
-      let yes = confirm('確定移除嗎？');
-
-      if (yes) {
-        localAry.splice(saveIndex, 1);
-        updateLocalStorage(localAry);
-        updataArticle();
-       
-        window.location.reload();
+      if (saveIndex !== -1) {
 
 
 
-      } else {
-        return
+        let yes = confirm('確定移除嗎？');
+
+        if (yes) {
+          localAry.splice(saveIndex, 1);
+          updateLocalStorage(localAry);
+          updataArticle();
+
+          window.location.reload();
+
+
+
+        } else {
+          return
+        }
+
+
+
       }
 
 
-
-    }
-
+    })
 
   })
-
-})
 
 
 }

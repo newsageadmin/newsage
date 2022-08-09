@@ -1795,13 +1795,9 @@ body {
   width: 100%;
   bottom: 0;
   padding-top: 15px;
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+75&0+0,0.9+74 */
-  /* FF3.6-15 */
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 74%, rgba(0, 0, 0, 0.9) 75%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00000000", endColorstr="#e6000000",GradientType=0 );
-  /* IE6-9 */
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+75&0+0,0.9+74 */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 74%, rgba(0, 0, 0, 0.9) 75%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00000000", endColorstr="#e6000000",GradientType=0 ); /* IE6-9 */
 }
 @media (max-width: 769px) {
   .focus-box .showdown-box {

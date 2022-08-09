@@ -1147,13 +1147,9 @@ i.bi.bi-list {
         display: -webkit-box;
     }
 
-
-
     .video-box {
 
-
         p {
-
             font-size: 1.25rem;
             margin: 1.25rem 0;
             display: block;
@@ -1163,9 +1159,9 @@ i.bi.bi-list {
             white-space: nowrap;
             overflow: hidden;
             padding: 0 25px;
-           
-          
+                     
             &:after {
+
                 background-color: rgba($m-color , .5);
                 content: '';
                 position: absolute;
@@ -1184,16 +1180,10 @@ i.bi.bi-list {
             background: #fff !important;
             border: $b-color solid 1px;
           
-        }
-
-      
+        }      
     }
-
-
-
-
-
 }
+
 
 .morenews {
     font-size: $font*1.5;

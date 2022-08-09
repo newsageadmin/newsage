@@ -38,7 +38,8 @@ function randomapi(){
   
 
   ///random/:channel
-	axios.get(`${apilocal}/random/醫療`)
+	// axios.get(`${apilocal}/random/醫療`)
+  axios.get('./JSON/random.json')
 	.then( (res) => {
 	  
 		randomAry = res.data;
