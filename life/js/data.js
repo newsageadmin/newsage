@@ -49,7 +49,8 @@ init();
 function sliderAdapi() {
 
     //https://apilan.news-age.tw/getData/front/台中腔?chStatus=1
-    axios.get(`${apitestlink}/getData/front/台中腔?chStatus=1`)
+    // axios.get(`${apitestlink}/getData/front/台中腔?chStatus=1`)
+    axios.get('./JSON/chlife.json')
         .then((res) => {
             // console.log(res.data);
             sliderAd = res.data;
@@ -66,7 +67,7 @@ function getsliderAd() {
 
     let str = "";
     sliderAd.length = 5;
-    
+
     sliderAd.forEach((item) => {
         str += `<div class="item img-item">
         <a href="inside.html?id=${item.id}" target="_blank"><img alt="${item.title}" class="img-fluid owl-lazy" data-src="${item.chFront}"
@@ -75,7 +76,7 @@ function getsliderAd() {
         </a>
     </div>`
     });
-    
+
 
 
     slider.innerHTML = str;
@@ -119,8 +120,8 @@ function getsliderAd() {
 
 function justifyReportapi() {
     //https://apilan.news-age.tw/getData/position/台中腔/lifeA
-    //
-    axios.get(`${apitestlink}/articleData/?pageSize=3&pageNum=1&channel=台中腔`)
+    // axios.get(`${apitestlink}/articleData/?pageSize=3&pageNum=1&channel=台中腔`)
+    axios.get('./JSON/lifeA.json')
         .then((res) => {
 
 
@@ -200,7 +201,8 @@ function newsAapi() {
 
 
 
-    axios.get(`${apitestlink}/getData/position/台中腔/lifeB`)
+    // axios.get(`${apitestlink}/getData/position/台中腔/lifeB`)
+    axios.get('./JSON/lifeB.json')
         .then((res) => {
 
             newsaAry = res.data;
@@ -246,7 +248,8 @@ function getnewsaList() {
 //美食特區
 function newsBapi() {
 
-    axios.get(`${apitestlink}/getData/position/台中腔/lifeC`)
+    // axios.get(`${apitestlink}/getData/position/台中腔/lifeC`)
+    axios.get('./JSON/lifeC.json')
         .then((res) => {
 
             newsbAry = res.data;
@@ -288,7 +291,8 @@ function getnewsbList() {
 //https://apilan.news-age.tw/getData/ad/台中腔
 
 function adApi() {
-    axios.get(`${apitestlink}/getData/ad/台中腔`)
+    // axios.get(`${apitestlink}/getData/ad/台中腔`)
+    axios.get('./JSON/ad.json')
         .then((res) => {
 
             adboxAry = res.data;
