@@ -20,7 +20,7 @@ adapi();
 
 function getListData(st,et){
    
-  let path = `${apilocal}/articleData/?pageSize=${limit}&pageNum=${page}&dateStart=${st}&dateEnd=${et}&channel=醫療`;
+  //let path = `${apilocal}/articleData/?pageSize=${limit}&pageNum=${page}&dateStart=${st}&dateEnd=${et}&channel=醫療`;
   let pointPath = `${apilocal}/articleData/?pageSize=${limit}&pageNum=${page}&dateStart=${st}&dateEnd=${et}&channel=醫療&chLocation=medicalC`;
   
   let kind = location.href.split('?')[1];
@@ -37,7 +37,7 @@ function getListData(st,et){
     })
 
   }else {
-    axios.get(path)
+    axios.get('./JSON/list.json')
     .then( (res)=>{
       ary = res.data.result;
       printList(ary);

@@ -20,12 +20,12 @@ adapi();
 function getListData(st,et){
   
  
-  let path = `${apilocal}/articleData/?pageSize=${limit}&pageNum=${page}&dateStart=${st}&dateEnd=${et}&channel=台中腔`;
+  //let path = `${apilocal}/articleData/?pageSize=${limit}&pageNum=${page}&dateStart=${st}&dateEnd=${et}&channel=台中腔`;
 
   //https://apilan.news-age.tw/articleData/?pageSize=10&pageNum=1&channel=台中腔
 
   // console.log(path);
-  axios.get(path)
+  axios.get('./JSON/list.json')
   .then( (res)=>{
     ary = res.data.result;
     //console.log('list',ary);
