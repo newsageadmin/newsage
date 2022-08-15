@@ -46,7 +46,7 @@ function returntime(time) {
 function Lgadapi() {
 
   // axios.get(`${apitestlocal}/getData/front/?homeStatus=1`)
-  axios.get('../JSON/banner.json')
+  axios.get('./JSON/banner.json')
     .then((res) => {
       Lgbgary = res.data;
       Lgbgary.length = 5;
