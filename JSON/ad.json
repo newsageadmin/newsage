@@ -2,18 +2,18 @@
     {
         "id": 5,
         "title": "新一代就是你的世代",
-        "imgLong": "../images/imgSingle-1653359002662.jpg",
-        "imgStr": "../images/imgSingle-1653358995285.jpg",
-        "imgMobi": "../images/imgSingle-1653359015699.jpg",
+        "imgLong": "./images/imgSingle-1653359002662.jpg",
+        "imgStr": "./images/imgSingle-1653358995285.jpg",
+        "imgMobi": "./images/imgSingle-1653359015699.jpg",
         "link": "https://www.news-age.tw/index.html",
         "createTime": "2022-05-24T02:24:44.000Z"
     },
     {
         "id": 4,
         "title": "張廖萬堅",
-        "imgLong": "../images/a-03.jpg",
-        "imgStr": "../images/a-01.jpg",
-        "imgMobi": "../images/a-02.jpg",
+        "imgLong": "./images/a-03.jpg",
+        "imgStr": "./images/a-01.jpg",
+        "imgMobi": "./images/a-02.jpg",
         "link": "https://www.news-age.tw/View/inside.html?id=306",
         "createTime": "2022-04-29T01:49:36.000Z"
     },
@@ -29,9 +29,9 @@
     {
         "id": 3,
         "title": "南投是台灣的中心",
-        "imgLong": "../images/ad-03.jpg",
-        "imgStr": "../images/+ad_01.jpg",
-        "imgMobi": "../images/ad-02.jpg",
+        "imgLong": "./images/ad-03.jpg",
+        "imgStr": "./images/+ad_01.jpg",
+        "imgMobi": "./images/ad-02.jpg",
         "link": "https://www.news-age.tw/View/inside.html?id=224",
         "createTime": "2022-03-31T06:24:57.000Z"
     }

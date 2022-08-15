@@ -133,7 +133,7 @@ function getLgad() {
 function adapi() {
   //https://api.news-age.tw/getData/ad/首頁
   //axios.get(`${apitestlocal}/getData/ad/首頁`)
-  axios.get('../JSON/ad.json')
+  axios.get('./JSON/ad.json')
     .then((res) => {
 
       addata = res.data;
@@ -153,7 +153,7 @@ function adapi() {
 function allListapi() {
 
   // axios.get(`${apitestlocal}/articleData`)
-  axios.get('../JSON/articleData.json')
+  axios.get('./JSON/articleData.json')
     .then((res) => {
 
       allData = res.data.result;
