@@ -11,7 +11,6 @@ const talkList = document.querySelector('.talklist');
 const sportList = document.querySelector('.sportlist');
 const actList = document.querySelector('.focus-box');
 
-
 let newsdata = [];
 let addata = [];
 let focusReportData = [];
