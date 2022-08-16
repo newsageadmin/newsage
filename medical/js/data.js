@@ -47,12 +47,13 @@ function init() {
     returnCreapi();
     returnDreapi();
     warmapi();
-   
     longadapi();
-    // localapi();
-
+    // localapi();ㄚ
 
 }
+
+
+
 
 init();
 
