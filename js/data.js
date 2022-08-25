@@ -1,3 +1,5 @@
+$('#momo').load('./model.html');
+
 const apitestlocal = "https://api.news-age.tw";
 const newslist = document.querySelector('.news-box');
 const radList = document.querySelector('.newad');
@@ -548,15 +550,12 @@ function getadData() {
     });
   }
 
-
-
 }
 
 
 
 
 //GTAG追蹤
-
 
 const lgBanner = document.querySelector('.slider-box');
 
@@ -609,32 +608,24 @@ function localStorageFn() {
         favorite.splice(favoriteIndex, 1);
         e.target.classList.remove('bi-bookmark-fill');
         e.target.classList.add('bi-bookmark');
-
       }
 
       updateLocalStorage(favorite);
       updataArticle();
-
-
-    });
+    });       
 
 
     //比對陣列的id是否等於點擊收藏id
     favorite.forEach((fid) => {
-
-
       if (fid.id == item.dataset.id) {
         item.children[0].classList.remove('bi-bookmark');
         item.children[0].classList.add('bi-bookmark-fill');
       }
-    })
-
-
-
-
+    });
+    
   });
 
-}
+};
 
 
 

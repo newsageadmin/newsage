@@ -146,19 +146,17 @@ function printList(ary){
     }
   }
 
-
 $(window).scroll(function () {
+  
     var scrollTop = $(this).scrollTop();
     var scrollHeight = $('body').prop("scrollHeight");
     var clientHeight = document.documentElement.clientHeight;
-   
-  
+     
     // console.log('scrollTop:', scrollTop);
     // console.log('scrollHeight:', scrollHeight);
     // console.log('clientHeight:', clientHeight); 
 
   if( scrollTop >=600 ) {
-
     $('.list-left').addClass('fixed');
     $('.list-right').addClass('offset-xl-3');
    
@@ -167,8 +165,6 @@ $(window).scroll(function () {
     $('.list-right').removeClass('offset-xl-3');
    
   }
-  
-    
   
     if ( scrollTop + clientHeight >= scrollHeight  ) {
     //  console.log('show up 123');
