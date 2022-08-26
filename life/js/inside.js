@@ -28,10 +28,10 @@ let hotnewsAry =[];
 
  //隨機顯示
  http://api01.news-age.tw/api/All/Random
- randomapi();
+//  randomapi();
  insideApi();
- hotnewsApi();
- adapi();
+//  hotnewsApi();
+//  adapi();
  //隨機顯示文章
 
 function randomapi(){
@@ -89,20 +89,13 @@ function insideApi() {
 let url = window.location.href;
 let  newsId =  url.split( '?id=')[1];
 
-
-var metaList = document.getElementsByTagName("meta");
+let metaList = document.getElementsByTagName("meta");
 
  //articleData
 
- axios.get(`${apilocal}/articleData/台中腔/${newsId}`)
- .then((res)=> {
-  
-   mainAry = res.data;
-
-   
- 
- 
-
+//  axios.get(`${apilocal}/articleData/台中腔/${newsId}`)
+  axios.get('./JSON/list.json').then((res)=> {
+   mainAry = res.data.result;
    //GSC架構
    const script = document.createElement('script');
    script.setAttribute('type', 'application/ld+json');
@@ -141,6 +134,7 @@ var metaList = document.getElementsByTagName("meta");
 
 function printmain(){
 
+  
  
 
 let str = `	<h1 class="article-title">
