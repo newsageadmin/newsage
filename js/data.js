@@ -203,7 +203,7 @@ function getfocusData() {
 
 
     str += `	<div class="col-md-4 col-6 mb-2 ">
-    <a href="View/inside.html?id=${item.articleId}" title="${item.mainTitle}">
+    <a href="#" title="${item.mainTitle}">
     <span></span>
       <img src="${item.imgSqu}" class="img-fluid" alt="${item.mainTitle}" width="361" height="222">
     </a>
@@ -254,7 +254,7 @@ function gettalkData() {
 
 
     str += `	<div class="col-md-3 col-6 mb-2 ">
-    <a href="Topic/inside.html?id=${item.articleId}" title="${item.mainTitle}">
+    <a href="#" title="${item.mainTitle}">
     <span></span>
       <img src="${item.imgSqu}" class="img-fluid" alt="${item.mainTitle}" width="361" height="222">
     </a>
@@ -355,7 +355,7 @@ function geteduData() {
 
 
     str += `	<div class="col-md-3 col-6 mb-2 ">
-    <a href="Educate/inside.html?id=${item.articleId}" title="${item.mainTitle}">
+    <a href="#" title="${item.mainTitle}">
     <span></span>
       <img src="${item.imgSqu}" class="img-fluid" alt="${item.mainTitle}" width="361" height="222">
     </a>
