@@ -481,7 +481,7 @@ function rightAddata() {
   addata.forEach((item) => {
 
     str += `<div class="item">
-		<a href="${item.link}" target="_blank"><img class="img-fluid owl-lazy" data-src="${item.imgStr}" width="525" height="700" alt="${item.ImgTitle_Straight}"></a>
+		<a href="#" target="_blank"><img class="img-fluid owl-lazy" data-src="${item.imgStr}" width="525" height="700" alt="${item.ImgTitle_Straight}"></a>
 	</div>`
 
   });
